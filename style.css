@@ -8,7 +8,7 @@
   --white: hsl(0, 0%, 100%);
   --font-family: 'Poppins', Arial, sans-serif;
 }
-/* Removed .cards__center and stray closing brace for clean CSS */
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
@@ -94,7 +94,7 @@ body {
 }
 
 .cards__center {
-  /* Removed: no longer needed after semantic fix */
+/* Removed empty .cards__center rule */
 }
 
 .card {
@@ -146,12 +146,7 @@ body {
     grid-row: 1 / span 2;
     align-self: center;
   }
-  .cards__center {
-    grid-column: 2;
-    grid-row: 1 / span 2;
-    flex-direction: column;
-    gap: 2rem;
-  }
+  /* Removed obsolete .cards__center selector */
   .card--red {
     margin-bottom: 0;
   }
@@ -167,11 +162,7 @@ body {
   .cards > .card--blue {
     height: 100%;
   }
-  .cards {
-    grid-template-areas:
-      "cyan center blue"
-      "cyan center blue";
-  }
+  /* Removed obsolete grid-template-areas for .cards__center */
 }
 
 @media (min-width: 1100px) {
