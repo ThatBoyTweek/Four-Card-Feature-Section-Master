@@ -90,11 +90,11 @@ body {
   .cards > .card--blue {
     height: 100%;
   }
-}
+/* Removed stray closing brace */
 }
 
 .cards__center {
-/* Removed empty .cards__center rule */
+/* Removed obsolete .cards__center rule */
 }
 
 .card {
@@ -124,9 +124,11 @@ body {
 }
 
 .card img {
-  align-self: flex-end;
+  display: block;
+  margin-bottom: 1.5rem;
   width: 60px;
   height: auto;
+  align-self: flex-start;
 }
 
 .card--cyan { border-top-color: var(--cyan); }
